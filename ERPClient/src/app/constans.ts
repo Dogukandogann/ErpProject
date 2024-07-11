@@ -1,1 +1,1 @@
-export const api: String = 'https://localhost:7101/api';
+export const api: String = 'https://localhost:7054/api';

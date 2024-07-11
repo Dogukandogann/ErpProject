@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 export class SwalService {
   constructor() {}
 
-  callToas(title: string, icon: SweetAlertIcon = 'success') {
+  callToast(title: string, icon: SweetAlertIcon = 'success') {
     Swal.fire({
       title: title,
       text: 'Example Text',
