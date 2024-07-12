@@ -18,7 +18,7 @@ export class LoginComponent {
   constructor(private http: HttpService, private router: Router) {}
 
   signIn() {
-    this.http.post<LoginResponseModel>('/Auth/Login', this.model, (res) => {
+    this.http.post<LoginResponseModel>('Auth/Login', this.model, (res) => {
       localStorage.setItem('token', res.token);
       this.router.navigateByUrl('/');
     });
